@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Booklist\Create.cshtml" />
+    <Content Remove="Pages\Booklist\Edit.cshtml" />
+    <Content Remove="Pages\Booklist\Index.cshtml" />
+    <Content Remove="Pages\Booklist\Upsert.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Booklist\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Booklist\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Booklist\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Booklist\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Booklist\Upsert.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Booklist\Create.cshtml" />
+    <None Include="Pages\Booklist\Edit.cshtml" />
+    <None Include="Pages\Booklist\Index.cshtml" />
+    <None Include="Pages\Booklist\Upsert.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Booklist\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Booklist\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Booklist\Upsert.cshtml" />
+  </ItemGroup>
+
+</Project>
